@@ -1,78 +1,85 @@
-<!-- # Project Week Front-End
+# School Of Code Week 8 Project <img src = "./public/images/plusMentor/logo-51c754388b198e5bbb0d08a971ebbfa2.png" width="50px" height="50px" >
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## The J.K.R.S <img src= "./public/images/plusMentor/52778-joker-icon.png" width = "50px" height = "50px"/>
 
-## Available Scripts
+(Jones.Kudev.Randle.Swann)
 
-In the project directory, you can run:
+### Problem :question:
 
-### `npm start`
+We were tasked with building an app which would enchance the mentoring experince for both a mentor and mentee.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Our Solution :bulb:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Drawing from our own experince as both mentors and mentees we decided to make an app that would help with contact between mentor and mentee.
+We found that some people don't know what level of relationship a mentor mentee should be as well not knowing what to talk about (particularly at the beginning).
 
-### `npm test`
+##### This made us create...
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src = "https://plusmentor.netlify.app/images/plusMentor/plusMentor_gradient_homepage.png"/>
 
-### `npm run build`
+### PlusMentor
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+PlusMentor has various features designed to smooth the transition:
+<br>
+Introduction
+<br>
+Ice Breakers
+<br>
+Talking Points
+<br>
+Your Sessions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Home Page :house:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src = "./public/images/plusMentor/Screenshot (180).png">
+To access page you need to log in to the app, if you have an account just press the `Log In` button and type your email and password into the fields. 
+<img src = "./public/images/plusMentor/Screenshot (186).png">
+<br>
+OR if you don't have an account just regisiter (no problem) 
+<br>
+Just click `Create An Account` type in your email, first name, surname, create a password and select if you are a mentor or mentee (bootcamper). Then use that email and password on the login page.
+<img src = "./public/images/plusMentor/Screenshot (187).png">
 
-### `npm run eject`
+#### Introduction :wave:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The introduction page is designed to help with first contact between mentor and mentee, trying to make sure you get of on the right foot. The page is set up like a checklist, this is where you can set up your email/conversation of the initial meeting. Even suggests for how to stay in touch zoom, email, in person and even recommended how long (30 mins/1 hour).
+<img src = "./public/images/plusMentor/Screenshot (181).png">
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Ice Breakers :hammer:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The ice breaker page is designed to help with starting a dialogue, it has sample questions covering all different aspects of kind of relationship you may have can be established by the response.
+<br>Some professional questions(their career):briefcase:
+<br>Some more relaxed questions (hobbies and interests):musical_keyboard:
+<br>Or even controversional (do they like marmite?):confounded:
+<img src = "./public/images/plusMentor/Screenshot (183).png">
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Talking Points :telephone:
 
-## Learn More
+The talking points page we designed to be help with things you may not have even considered. The page has a button on it that when clicked gives a comment or question that you may not even realised you wanted the answer to. Maybe career path questions or even risk taking doubts.
+<img src = "./public/images/plusMentor/Screenshot (184).png">
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Your Sessions :date:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The your sessions page is designed to help track what you discuss and when. The your sessions feature could be used like a journal. The page has some input fields on it as well some buttons. Let say that mentor mentee spoke on a particular day about the basics of JavaScript to help with this they did some codewars Katas together.
+<br>
+<img src = "./public/images/plusMentor/Screenshot (181).png">
+<br>
+On the your session page in the topic input field "JavaScripts Basics" could be added with "Did Codewars Katas to go over some soft skills" added into discussion input field and click `Submit New Card` button, this would add to collection with the date onto it. This could be relevant if you wanted to refer back to something maybe a topic that the mentee was struggling with and revisit the discussion.
+<br>
+The cards can then be displayed with `See All Cards` button (The `See your cards` is usefull if you have more than one mentor/mentee as you can see cards specific to one person).
+<img src = "./public/images/plusMentor/Screenshot (189).png">
 
-### Code Splitting
+### The How? :pencil2:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+We used various technologies to PlusMentor:
+<br>React & React-Router-Dom for main app functionality and link through the pages
+<br>Bulma for CSS :art:
+<br>JS-Cookie and React-Cookie for users access the site :cookie:
 
-### Analyzing the Bundle Size
+## What to see? :eyes:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
-
-# School Of Code Week 8 Project <img src = "https://d33wubrfki0l68.cloudfront.net/e6fddcbea146f91d2f3c160f7d56a9391a4740b0/4e758/static/logo-51c754388b198e5bbb0d08a971ebbfa2.png" width="100px" height="100px" >
-
-## J.K.R.S <img src= "https://icons.iconarchive.com/icons/google/noto-emoji-activities/512/52778-joker-icon.png" width = "100px" height = "100px"/>
-
-We were tasked with building app that would enhance the mentoring experience.
-
-In starting the project we started
+If you want to PlusMentor you can open a localHost version by typing "npm run start" in the terminal
+<br>
+Or a deployed version
+<br>
+https://plusmentor.netlify.app/

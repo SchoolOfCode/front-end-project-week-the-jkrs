@@ -97,5 +97,4 @@ If you want to PlusMentor you can open a localHost version by typing "npm run st
 
 ### Or a deployed version :computer:
 
-<br>
 https://plusmentor.netlify.app/

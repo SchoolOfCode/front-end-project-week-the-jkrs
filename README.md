@@ -1,4 +1,4 @@
-# Project Week Front-End
+<!-- # Project Week Front-End
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +67,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
+
+# School Of Code Week 8 Project <img src = "https://d33wubrfki0l68.cloudfront.net/e6fddcbea146f91d2f3c160f7d56a9391a4740b0/4e758/static/logo-51c754388b198e5bbb0d08a971ebbfa2.png" width="100px" height="100px" >
+
+## J.K.R.S <img src= "https://icons.iconarchive.com/icons/google/noto-emoji-activities/512/52778-joker-icon.png" width = "100px" height = "100px"/>
+
+We were tasked with building app that would enhance the mentoring experience.
+
+In starting the project we started

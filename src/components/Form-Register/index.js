@@ -29,7 +29,7 @@ function Register() {
         );
         const data = await req.json();
         if (data.success) {
-          console.log("WOOT YOU SUBMITTED A User!!");
+          // console.log("WOOT YOU SUBMITTED A User!!");
           history.push("/");
         }
       }
@@ -42,7 +42,7 @@ function Register() {
     const target = event.target;
     const value = target.value;
     const name = target.name;
-    console.log(form);
+    // console.log(form);
     const newData = {
       ...form,
       [name]: value,
@@ -54,7 +54,7 @@ function Register() {
 
   function handleSubmit(event) {
     setRegister(true);
-    console.log(`You've registered`);
+    // console.log(`You've registered`);
     event.preventDefault();
   }
 
@@ -153,17 +153,5 @@ function Register() {
     </div>
   );
 }
-// username/email p tag/text then input field
-// //password p tag/text then input field which hides password ***
-// firstname p tag then input field
-// surname p tag then input field
-// role (mentor/mentee) dropdown/radiobutton
-// button submit
-// button cancel
-
-// signing in
-// username
-// button submit
-// button cancel
 
 export default Register;

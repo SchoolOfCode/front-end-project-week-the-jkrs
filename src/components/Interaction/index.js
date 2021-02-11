@@ -71,7 +71,7 @@ function Interaction() {
         !("topic" in newCard) ||
         !("discussion" in newCard)
       ) {
-        console.log("Missing value.");
+        // console.log("Missing value.");
         return;
       }
       async function submitNewCard() {
@@ -90,8 +90,8 @@ function Interaction() {
         );
         const data = await req.json();
         if (data.success) {
-          console.log(data);
-          console.log("WOOT YOU SUBMITTED A card!!");
+          // console.log(data);
+          // console.log("WOOT YOU SUBMITTED A card!!");
         }
       }
       submitNewCard();
@@ -122,7 +122,7 @@ function Interaction() {
   }
 
   function dropClick() {
-    console.log("drop clicked");
+    // console.log("drop clicked");
     setSubmitDisplayCardBy(!submitDisplayCardBy);
   }
 
@@ -149,12 +149,6 @@ function Interaction() {
               name="discussion"
               onChange={handleNewCard}
             ></textarea>
-            {/* <input
-              className="input"
-              name="discussion"
-              type="text"
-              onChange={handleNewCard}
-            /> */}
           </label>
           <br />
           <br />

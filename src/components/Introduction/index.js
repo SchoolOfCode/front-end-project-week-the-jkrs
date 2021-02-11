@@ -70,26 +70,6 @@ function Introduction({ loggedIn }) {
             </div>
           ))}
         </div>
-
-        {/* <div className="checkListPaper">
-          <h4 className="title is-4">
-            For Mentors - here are some tips to get you started on your first
-            session.
-          </h4>
-          {tipsForMentors.map((el, i) => (
-            <div className="checkListItem">
-              <div className="field">
-                <input
-                  className="is-checkradio is-medium is-circle is-block is-success"
-                  id={i * 3}
-                  type="checkbox"
-                  name={i * 3}
-                />
-                <label for={i * 3}>{el}</label>
-              </div>
-            </div>
-          ))}
-        </div> */}
       </main>
     </div>
   );

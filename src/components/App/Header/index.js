@@ -24,8 +24,6 @@ function Header() {
         width="350"
       />
       <nav>
-        {/* <NavLink to="/login">Sign In</NavLink>
-        <NavLink to="/register">Register</NavLink> */}
         <NavLink to="/intro">Introduction</NavLink>
         &nbsp;
         <NavLink to="/icebreaker">Icebreaker</NavLink>

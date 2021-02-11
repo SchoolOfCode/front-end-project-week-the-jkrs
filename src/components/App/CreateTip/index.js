@@ -11,7 +11,7 @@ function Input() {
   useEffect(() => {
     if (clicked) {
       async function submitTip() {
-        console.log(newTip + " 10");
+        //console.log(newTip + " 10");
         const requestOptions = {
           method: `POST`,
 
@@ -29,8 +29,8 @@ function Input() {
         );
         const data = await req.json();
         if (data.success) {
-          console.log(data);
-          console.log("WOOT YOU SUBMITTED A TIP!!");
+          // console.log(data);
+          // console.log("WOOT YOU SUBMITTED A TIP!!");
         }
       }
       submitTip();

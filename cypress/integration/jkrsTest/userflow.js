@@ -6,12 +6,14 @@ import introduction from "./introduction/introduction";
 import iceBreaker from "./iceBreaker/iceBreaker";
 import talkingPoints from "./talkingPoints/talkingPoints";
 import yourSessions from "./yourSessions/yourSessions";
+import signOut from "./signOut/signOut";
 
 openingScreen();
 homePage();
-//register();
+register();
 logIn();
-//introduction();
-//iceBreaker();
-//talkingPoints();
+introduction();
+iceBreaker();
+talkingPoints();
 yourSessions();
+signOut();

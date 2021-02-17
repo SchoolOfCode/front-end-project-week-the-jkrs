@@ -21,10 +21,6 @@ function Login({ getEmailFromLogin }) {
   useEffect(() => {
     if (clicked) {
       async function getLogin() {
-        // console.log(login.email);
-        // console.log(login.password);
-
-        // console.log(btoa(login.email + ":" + login.password));
         const res = await fetch(`http://localhost:5000/`, {
           credentials: "include",
           cache: "no-cache",
@@ -39,7 +35,6 @@ function Login({ getEmailFromLogin }) {
 
         if (result.status === 200 || result.status === 304) {
           // redirect them to the intro page...
-          // console.log("Redirecting you to the Intro page...");
           history.push("/intro");
         }
       }

@@ -10,7 +10,7 @@ function logIn() {
       cy.wait(1500);
     });
     it("Check for Log in heading", () => {
-      cy.get("h3").should("have.id", "signInTitle").contains("Log in");
+      cy.get("h3#signInTitle").contains("Log in");
       cy.wait(1500);
     });
     it("Check for Email input field and type email in", () => {

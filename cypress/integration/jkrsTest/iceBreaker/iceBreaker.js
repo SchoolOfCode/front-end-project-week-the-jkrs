@@ -3,8 +3,7 @@
 function iceBreaker() {
   describe("Check Ice Breaker page", () => {
     it("Navigating to page", () => {
-      cy.get("header")
-        .should("have.class", "App-header")
+      cy.get("header.App-header")
         .find("nav")
         .find("a[href*='/icebreaker']")
         .contains("Icebreaker")
@@ -35,7 +34,7 @@ function iceBreaker() {
     });
     it("Checking list of professional icebreakers", () => {
       cy.get("main")
-        .find("div")
+        .find("div.")
         .should("have.class", "icebreakerPaper animate-entrance")
         .find("h4")
         .contains(

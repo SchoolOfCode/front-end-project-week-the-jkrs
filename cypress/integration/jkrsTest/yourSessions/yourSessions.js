@@ -3,8 +3,7 @@
 function yourSessions() {
   describe("Check Your Sessions page", () => {
     it("Navigating to page", () => {
-      cy.get("header")
-        .should("have.class", "App-header")
+      cy.get("header.App-header")
         .find("nav")
         .find("a[href*='/interaction']")
         .contains("Your sessions")
@@ -33,16 +32,14 @@ function yourSessions() {
     });
     it("Submit discussion card", () => {
       cy.get("form")
-        .find("button")
-        .should("have.class", "button is-primary is-medium")
+        .find("button.button is-primary is-medium")
         .contains("Submit New Card")
         .click();
       cy.wait(1500);
     });
     it("Display all cards", () => {
       cy.get("main")
-        .find("button")
-        .should("have.class", "button is-info is-medium")
+        .find("button.button is-info is-medium")
         .contains("See All Cards")
         .click();
       cy.wait(1500);

@@ -1,6 +1,6 @@
 //Log in to account created
 
-function logIn() {
+function logIn(email, password) {
   describe("Log in to app", () => {
     it("Click Log in button", () => {
       cy.get("a[href*='/login']")
@@ -19,7 +19,7 @@ function logIn() {
         .eq(0)
         .contains("Your Email:")
         .find("input[name=email]")
-        .type("cypresstest@gmail.com");
+        .type(email);
       cy.wait(1500);
     });
     it("Check for Password input field and type password in", () => {
@@ -28,15 +28,13 @@ function logIn() {
         .eq(1)
         .contains("Password:")
         .find("input[name=password]")
-        .type("cypresstest");
+        .type(password);
       cy.wait(1500);
     });
     it("Check for Log In button and click it", () => {
       cy.get("form")
-        .find("div")
-        .should("have.class", "formButtonsContainer")
-        .find("button")
-        .should("have.id", "nextButton")
+        .find("div.formButtonsContainer")
+        .find("button#nextButton")
         .contains("Log In")
         .click();
       cy.wait(1500);

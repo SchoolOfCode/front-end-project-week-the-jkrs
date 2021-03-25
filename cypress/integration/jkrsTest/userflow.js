@@ -10,10 +10,10 @@ import signOut from "./signOut/signOut";
 
 openingScreen();
 homePage();
-register();
-logIn();
-introduction();
-iceBreaker();
-talkingPoints();
-yourSessions();
-signOut();
+// register();
+// logIn();
+// introduction();
+// iceBreaker();
+// talkingPoints();
+// yourSessions();
+// signOut();

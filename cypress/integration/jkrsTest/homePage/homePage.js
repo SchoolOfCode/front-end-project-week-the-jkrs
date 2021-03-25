@@ -3,7 +3,7 @@
 function HomePage() {
   describe("Checking contents of home screen", () => {
     it("Check for PlusMentor logo", () => {
-      cy.get("img").should("have.class", "animate-entrance");
+      cy.get("img.animate-entrance");
       cy.wait(1500);
     });
     it("Check for Create an account button", () => {

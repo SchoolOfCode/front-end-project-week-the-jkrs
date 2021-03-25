@@ -3,8 +3,7 @@
 function talkingPoints() {
   describe("Check Talking Points page", () => {
     it("Navigating to page", () => {
-      cy.get("header")
-        .should("have.class", "App-header")
+      cy.get("header.App-header")
         .find("nav")
         .find("a[href*='/GetTip']")
         .contains("Talking Points")

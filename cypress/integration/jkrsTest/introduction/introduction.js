@@ -3,14 +3,9 @@
 function introduction() {
   describe("Check Introduction page", () => {
     it("Check for welcoming message", () => {
-      cy.get("main")
-        .find("div")
-        .should("have.class", "card animate-entrance")
-        .find("header")
-        .should("have.class", "card-header")
-        .find("h1")
-        .should("have.id", "introCardTitle")
-        .contains("Welcome to plusMentor: The School of Code Mentoring App");
+      cy.get("h1#introCardTitle").contains(
+        "Welcome to plusMentor: The School of Code Mentoring App"
+      );
       cy.wait(1500);
     });
     it("Checking title of checklist", () => {

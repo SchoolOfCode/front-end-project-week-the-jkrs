@@ -1,6 +1,6 @@
 //Create account
 
-function register() {
+function register(email, firstName, lastName, password) {
   describe("Creating an account", () => {
     it("Click Create an account button", () => {
       cy.get("a[href*='/register']")
@@ -10,9 +10,7 @@ function register() {
       cy.wait(1500);
     });
     it("Check for Create an account heading", () => {
-      cy.get("h3")
-        .should("have.id", "signInTitle")
-        .contains("Create an account");
+      cy.get("h3#signInTitle").contains("Create an account");
       cy.wait(1500);
     });
     it("Check for email input field and type email in", () => {
@@ -21,7 +19,7 @@ function register() {
         .eq(0)
         .contains("Your Email:")
         .find("input[name=email]")
-        .type("cypresstest@gmail.com");
+        .type(email);
       cy.wait(1500);
     });
     it("Check for First Name input field and type first name in", () => {
@@ -30,7 +28,7 @@ function register() {
         .eq(1)
         .contains("First Name:")
         .find("input[name=first_name]")
-        .type("Cypress");
+        .type(firstName);
       cy.wait(1500);
     });
     it("Check for Last Name input field and type Last name in", () => {
@@ -39,7 +37,7 @@ function register() {
         .eq(2)
         .contains("Last Name:")
         .find("input[name=last_name]")
-        .type("Test");
+        .type(lastName);
       cy.wait(1500);
     });
     it("Check for Password input field and type password in", () => {
@@ -48,21 +46,19 @@ function register() {
         .eq(3)
         .contains("Password:")
         .find("input[name=password]")
-        .type("cypresstest");
+        .type(password);
       cy.wait(1500);
     });
-    it("Check for Role radio buttons mentor and bootcamper", () => {
+    it("Check for Role radio buttons Mentor and Bootcamper", () => {
       cy.get("form").find("label").eq(4).contains("Role:");
       cy.get("form")
-        .find("div")
-        .should("have.class", "control")
+        .find("div.control")
         .find("label")
         .eq(0)
         .contains("Mentor")
         .find("input[name=role]");
       cy.get("form")
-        .find("div")
-        .should("have.class", "control")
+        .find("div.control")
         .find("label")
         .eq(1)
         .contains("Bootcamper")
@@ -71,8 +67,7 @@ function register() {
     });
     it("Select radio button for mentor role", () => {
       cy.get("form")
-        .find("div")
-        .should("have.class", "control")
+        .find("div.control")
         .find("label")
         .eq(0)
         .contains("Mentor")
@@ -82,19 +77,16 @@ function register() {
     });
     it("Check for register button and click it", () => {
       cy.get("form")
-        .find("div")
-        .should("have.class", "formButtonsContainer")
-        .find("button")
-        .should("have.id", "nextButton")
+        .find("div.formButtonsContainer")
+        .find("button#nextButton")
         .contains("Register")
         .click();
       cy.wait(1500);
     });
     it("Check for back button and click it", () => {
       cy.get("form")
-        .find("div")
-        .should("have.class", "formButtonsContainer")
-        .find("a")
+        .find("div.formButtonsContainer")
+        .find("a[href*='/']")
         .should("have.id", "backButton")
         .contains("Back")
         .click();

@@ -10,8 +10,8 @@ import signOut from "./signOut/signOut";
 
 openingScreen();
 homePage();
-register();
-logIn();
+register("cypresstest@gmail.com", "Cypress", "Test", "cypresstest");
+logIn("cypresstest@gmail.com", "cypresstest");
 introduction();
 iceBreaker();
 talkingPoints();
